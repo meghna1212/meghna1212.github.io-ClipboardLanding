@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-image: url('./bg-header-mobile.png');
+  background-position: center;
+  background-size: cover;
+  padding: 8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header img{
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 3rem;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 1rem;
+  color: hsl(210, 10%, 33%);
+}
+
+p{
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 3rem;
+  color: hsl(201, 11%, 66%);
+}
+
+.button-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width:100%;
+}
+
+.downloadbtn{
+  width: 100%;
+  height: 3rem;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.downloadbtn:hover{
+  cursor: pointer;
+}
+
+.iosbtn{
+  background-color: hsl(171, 66%, 44%);
+}
+.macbtn{
+  background-color: hsl(233, 100%, 69%);
+}
+
+.content1{
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.img-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.content1 p{
+ margin-bottom: 3rem;
+}
+
+.content1 img{
+  margin-bottom: 3rem;
+  width:100%;
+}
+
+.content2{
+  padding: 8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.content2 img{
+  width: 100%;
+}
+
+.content3{
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.icon-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.card img{
+  position: relative;
+  left:45%;
+  margin: 1.5rem 0;
+}
+
+.companies{
+  padding: 8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.companies img{
+  margin-bottom: 4rem;
+}
+
+.content4{
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Bai Jamjuree', sans-serif;
+  padding-bottom: 8rem;
+
+}
+
+.footer{
+  background-color: rgba(238, 238, 238, 0.849);
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Bai Jamjuree', sans-serif;
+
+}
+
+.footer .logo{
+  width: 3rem;
+  height: 3rem;
+  margin: 3rem 0;
+}
+
+.footer-links{
+  display: flex;
+  text-align: center;
+}
+
+.footer li{
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.footer a:hover{
+  color:hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+
+.socials{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.socials a:hover{
+  color:hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  header{
+    background-image: url('./bg-header-desktop.png');
+  }
+
+  h1{
+    width: 50%;
+  }
+
+  p{
+    width: 40%;
+  }
+
+  .button-wrapper
+  {
+    display: flex;
+    flex-direction: row;
+    width:37%;
+  }
+
+  .downloadbtn
+  {
+    margin-left: 1rem;
+  }
+
+  .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-text{
+    flex-direction: row;
+    margin-left: 0;
+  }
+
+  .img-text img{
+    position: relative;
+    right:5%;
+  }
+
+  .img-text-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-text h1{
+    margin-top: 4rem;
+    width: 85%;
+    text-align: left;
+  }
+
+  .img-text p{
+    width: 85%;
+    text-align: left;
+  }
+
+  .content2 p{
+    width:80%;
+  }
+
+  .content3 h1{
+    width:100%;
+  }
+  .content3 p{
+    width:100%;
+  }
+
+  .icon-text{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .card{
+    width: 30%;
+  }
+
+  .companies{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .content4 p{
+    width:65%;
+  }
+
+  .footer{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-links ul{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-links li{
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+  }
+  
+  .socials{
+    width: 10%;
+  }
+
+  .socials img{
+    margin-left: 0.5rem;
+  }
+
+  
+
+  
+}
